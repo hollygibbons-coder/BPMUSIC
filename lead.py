@@ -1,7 +1,7 @@
 # New TunePad cell
 import random
 
-# ===== SETTINGS: keep identical in every cell =====
+#  SETTINGS: keep identical in every cell 
 bpm = 140               # set to match the BPM at the top of TunePad: 120, 140 or 160
 target_seconds = 150
 
@@ -18,7 +18,7 @@ second_main = max(2, total_phrases - 12)
 plan = [("intro", 2), ("build", 2), ("main", 4),
         ("breakdown", 2), ("main", second_main), ("outro", 2)]
 
-# ===== LEAD MELODY =====
+#  LEAD MELODY 
 # Notes that fit each chord (chord tones in a higher register).
 # Order matches the chord cell: Cm7, Abmaj7, Fm7, Gm7
 melody_notes = [
@@ -69,7 +69,7 @@ def play_phrase(section):
         else:
             lead_bar(options, 70)                                # main groove
 
-# ===== RUN THE SONG =====
+#  RUN THE SONG 
 for section, phrases in plan:
     for p in range(phrases):
         play_phrase(section)
