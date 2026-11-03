@@ -2,7 +2,7 @@
 
 import random
 
-# ===== SETTINGS: keep identical in every cell =====
+#  SETTINGS: keep identical in every cell 
 bpm = 140               # set to match the BPM at the top of TunePad: 120, 140 or 160
 target_seconds = 150    # aimed track length (change to 180 for 3 minutes)
 
