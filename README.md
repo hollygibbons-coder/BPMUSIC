@@ -1,6 +1,6 @@
 # BPMUSIC
-Creative Coding project A2
-this is where you add details
+Creative Coding project - A2
+
 
 # BPMUSIC: BPM focused, coded House Music preset for Runners
 
@@ -11,7 +11,6 @@ An instrumental house track built in TunePad (Python) for runners. One song adap
 
 # Links
 TunePad project: https://tunepad.com/project/135105
-Explainer video:  To be added***
 
 # Project overview 
 
@@ -98,7 +97,7 @@ The shared settings are repeated at the top of every cell, because I was not sur
 Possible next steps if i were to add: a clap layer, more variation between sections, and testing whether the repeated settings can be avoided.
 
 # References
-***To be finalised →>>
+
 
 Ballmann, C. G. (2021). The influence of music preference on exercise responses and performance: A review. Journal of Functional Morphology and Kinesiology, 6(2), 33.
 https://doi.org/10.3390/jfmk6020033doi
