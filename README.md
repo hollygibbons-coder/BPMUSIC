@@ -10,7 +10,7 @@ An instrumental house track built in TunePad (Python) for runners. One song adap
 # Subject: 52685 Creative Coding (A2 Code Prototype Project)
 
 # Links
-TunePad project: https://tunepad.com/project/135105#code
+TunePad project: https://tunepad.com/project/135105
 Explainer video:  To be added***
 
 # Project overview 
