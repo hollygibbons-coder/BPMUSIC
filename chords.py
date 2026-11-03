@@ -1,7 +1,7 @@
 # New TunePad cell
 import random
 
-# ===== SETTINGS: keep identical in every cell =====
+#  SETTINGS: keep identical in every cell 
 bpm = 140               # set to match the BPM at the top of TunePad: 120, 140 or 160
 target_seconds = 150    # aimed track length (change to 180 for 3 minutes)
 
@@ -20,14 +20,14 @@ second_main = max(2, total_phrases - 12)
 plan = [("intro", 2), ("build", 2), ("main", 4),
         ("breakdown", 2), ("main", second_main), ("outro", 2)]
 
-# ===== CHORDS =====
+#  CHORDS 
 # Cm7 - Abmaj7 - Fm7 - Gm7, inverted so each chord sits close to the last
 chords = [[60, 63, 67, 70], [60, 63, 67, 68], [60, 63, 65, 68], [58, 62, 65, 67]]
 
 # Sparse stab pattern for the chill preset (1 = stab, 0 = rest)
 stab_pattern = [1, 0, 1, 0]
 
-# ===== PATTERN FUNCTIONS (these must sit ABOVE play_phrase) =====
+#  PATTERN FUNCTIONS (these must sit ABOVE play_phrase) 
 def stab_bar(notes, pattern, vel):
     # 4 beats. Each beat = half a beat of silence, then the stab (offbeat push)
     for hit in pattern:
@@ -46,7 +46,7 @@ def stab_bar_syncopated(notes, vel):
     playNote(notes, beats = 0.5, velocity = vel)
     rest(0.5)
 
-# ===== SONG SECTIONS =====
+#  SONG SECTIONS 
 def play_phrase(section):
     for notes in chords:                              # 4 bars = 16 beats
         if section == "intro":
@@ -64,7 +64,7 @@ def play_phrase(section):
             else:
                 stab_bar_syncopated(notes, 85)
 
-# ===== RUN THE SONG =====
+#  RUN THE SONG 
 for section, phrases in plan:
     for p in range(phrases):
         play_phrase(section)
